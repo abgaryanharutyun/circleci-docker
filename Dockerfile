@@ -1,7 +1,5 @@
 FROM node:10
 
-# installing docker 
-RUN bash service docker start
 
 # installing ruby
 RUN \
