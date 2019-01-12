@@ -1,6 +1,6 @@
 FROM quay.io/aptible/nodejs:v8.2.x
 
-
+RUN apt-get install lsb-core
 # installing docker 
 RUN wget -qO - https://download.docker.com/linux/ubuntu/gpg | apt-key add -
 RUN add-apt-repository \
