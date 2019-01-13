@@ -39,6 +39,8 @@ RUN apt-get -y update \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
 
+RUN wget -nv -O /usr/bin/docker-compose "https://github.com/docker/compose/releases/download/1.11.2/docker-compose-$(uname -s)-$(uname -m)"
+RUN chmod a+x /usr/bin/docker-compose
 
 # installing ruby
 RUN \
