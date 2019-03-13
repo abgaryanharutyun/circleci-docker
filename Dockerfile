@@ -54,3 +54,5 @@ RUN \
 RUN gem install aptible-cli -v 0.15.2
 
 RUN npm install -g yarn
+# installing jira-connector for the notify
+RUN npm install -g jira-connector
